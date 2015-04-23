@@ -5,7 +5,7 @@ function sortNumbers(n, m) {
 }
 
 module.exports = {
-  // Calculate n-tn percentile of 'data' using Nearest Rank Method
+  // Calculate n-th percentile of 'data' using Nearest Rank Method
   // http://en.wikipedia.org/wiki/Percentile#The_Nearest_Rank_method
   calc: function (data, n) {
     data.sort(sortNumbers);
