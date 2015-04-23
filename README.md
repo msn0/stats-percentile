@@ -18,4 +18,4 @@ percentile.calc(data, 75); // → 15
 ```
 
 ## License
-MIT
+MIT &copy; Michał Jezierski
