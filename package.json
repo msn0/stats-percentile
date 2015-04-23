@@ -1,0 +1,28 @@
+{
+  "name": "stats-percentile",
+  "version": "1.0.0",
+  "description": "Calculate Nth percentile of a list of values",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/msn0/stats-percentile.git"
+  },
+  "keywords": [
+    "percentile",
+    "stats",
+    "statistics",
+    "analytics"
+  ],
+  "author": "Michał Jezierski",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/msn0/stats-percentile/issues"
+  },
+  "homepage": "https://github.com/msn0/stats-percentile",
+  "dependencies": {
+    "mocha": "^2.2.4"
+  }
+}
