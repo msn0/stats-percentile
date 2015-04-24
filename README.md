@@ -35,4 +35,4 @@ Type: `number`
 n-th percentile to calculate; a number between 0 and 100. 
 
 ## License
-MIT &copy; Michał Jezierski
+MIT &copy; [Michał Jezierski](https://pl.linkedin.com/in/jezierskimichal)
