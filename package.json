@@ -1,6 +1,6 @@
 {
   "name": "stats-percentile",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Calculate Nth percentile of a list of values",
   "main": "index.js",
   "scripts": {
