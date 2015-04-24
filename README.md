@@ -18,17 +18,17 @@ var data = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
 percentile.calc(data, 75); // → 15
 ```
 
-## API
+### API
 
-### calc(data, n)
+#### calc(data, n)
 
-#### data
+##### data
 
 Type: `array`
 
 The data to be analysed; an array of numbers.
 
-#### n
+##### n
 
 Type: `number`
 
