@@ -4,7 +4,7 @@
   "description": "Calculate Nth percentile of a list of values",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha test.js"
   },
   "repository": {
     "type": "git",

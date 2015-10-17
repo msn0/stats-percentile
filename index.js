@@ -1,6 +1,7 @@
 "use strict";
 
 function swap(data, i, j) {
+  if (i === j) return;
   var tmp = data[j];
   data[j] = data[i];
   data[i] = tmp;
