@@ -22,7 +22,8 @@
     "url": "https://github.com/msn0/stats-percentile/issues"
   },
   "homepage": "https://github.com/msn0/stats-percentile",
-  "dependencies": {
-    "mocha": "^2.2.4"
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "benchmark": "^1.0.0"
   }
 }
