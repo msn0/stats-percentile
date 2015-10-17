@@ -25,18 +25,18 @@ function run(percentileFn) {
 
 var suite = new Suite();
 // add tests
-suite.add('percentile#findK', function() {
+suite.add('percentile#findK', function () {
   run(percentileFindK.calc);
 })
-.add('percentile#sort', function() {
+.add('percentile#sort', function () {
   run(percentileSort.calc);
 })
 // add listeners
-.on('cycle', function(event) {
+.on('cycle', function (event) {
   console.log(String(event.target));
 })
-.on('complete', function() {
+.on('complete', function () {
   console.log('Fastest is ' + this.filter('fastest').pluck('name'));
 })
 // run async
-.run({ 'async': true });
+.run();
