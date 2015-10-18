@@ -1,8 +1,11 @@
 "use strict";
 
 function swap(data, i, j) {
-  if (i === j) return;
-  var tmp = data[j];
+  var tmp;
+  if (i === j) {
+    return;
+  }
+  tmp = data[j];
   data[j] = data[i];
   data[i] = tmp;
 }
@@ -20,11 +23,13 @@ function partition(data, start, end) {
 }
 
 function findK(data, start, end, k) {
+  var pos;
   while (start < end) {
-    var pos = partition(data, start, end);
+    pos = partition(data, start, end);
     if (pos === k) {
       return data[k];
-    } else if (pos > k) {
+    }
+    if (pos > k) {
       end = pos;
     } else {
       start = pos + 1;

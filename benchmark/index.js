@@ -39,4 +39,4 @@ suite.add('percentile#findK', function () {
   console.log('Fastest is ' + this.filter('fastest').pluck('name'));
 })
 // run async
-.run();
+.run({ async: true });
