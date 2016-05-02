@@ -39,9 +39,9 @@ n-th percentile to calculate; a number between 0 and 100.
 Internally, `calc` applies a O(n) algorithm for k'th largest element problem, which get a better performance than ordinary sort method. The following benchmark result can tell more:
 
 ```
-percentile#findK x 116,079 ops/sec ±0.54% (97 runs sampled)
-percentile#sort x 16,077 ops/sec ±0.90% (98 runs sampled)
-Fastest is percentile#findK
+percentile#findK x 89,136 ops/sec ±1.25% (83 runs sampled)
+percentile#sort x 23,889 ops/sec ±1.85% (79 runs sampled)
+Fastest is ["percentile#findK"]
 ```
 
 ## License
