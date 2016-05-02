@@ -21,7 +21,7 @@ function run(percentileFn) {
       percentileFn(data, n);
     });
   });
-};
+}
 
 var suite = new Suite();
 // add tests
@@ -36,7 +36,7 @@ suite.add('percentile#findK', function () {
   console.log(String(event.target));
 })
 .on('complete', function () {
-  console.log('Fastest is ' + this.filter('fastest').pluck('name'));
+  console.log('Fastest is ' + JSON.stringify(this.filter('fastest').map('name')));
 })
 // run async
 .run({ async: true });
