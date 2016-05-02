@@ -12,7 +12,7 @@ function swap(data, i, j) {
 
 function partition(data, start, end) {
   var pivot = data[start];
-  var i, j, tmp;
+  var i, j;
   for (i = start + 1, j = start; i < end; i++) {
     if (data[i] < pivot) {
       swap(data, i, ++j);
