@@ -11,9 +11,9 @@ npm install stats-percentile
 ## Usage
 
 ```js
-var percentile = require('stats-percentile');
+import percentile from 'stats-percentile';
 
-var data = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
+const data = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
 
 percentile.calc(data, 75); // → 15
 ```
@@ -32,7 +32,7 @@ The data to be analysed; an array of numbers.
 
 Type: `number`
 
-n-th percentile to calculate; a number between 0 and 100. 
+n-th percentile to calculate; a number between 0 and 100.
 
 ## Alogrithm
 

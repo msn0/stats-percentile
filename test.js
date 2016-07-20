@@ -1,13 +1,13 @@
-var assert = require('assert');
-var percentile = require('./');
+import assert from 'assert';
+import percentile from './dist/index.js';
 
-describe("Percentile calculation", function () {
-  it("should return expected values", function () {
+describe('Percentile calculation', () => {
+  it('should return expected values', () => {
 
-    var data1 = [35, 20, 15, 50, 40];
-    var data2 = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
-    var data3 = [3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20];
-    var data4 = [
+    const data1 = [35, 20, 15, 50, 40];
+    const data2 = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
+    const data3 = [3, 6, 7, 8, 8, 9, 10, 13, 15, 16, 20];
+    const data4 = [
       10, 13, 15, 16, 20, 3, 6, 7, 7, 15, 19, 23, 33, 8, 19, 35, 22, 17, 19, 29,
       13, 13, 15, 16, 22, 3, 8, 7, 1, 14, 19, 23, 33, 8, 19, 35, 21, 17, 19, 29,
       17, 13, 19, 16, 20, 3, 9, 7, 25, 15, 18, 13, 23, 7, 11, 35, 22, 1, 9, 9,
@@ -15,7 +15,7 @@ describe("Percentile calculation", function () {
       15, 13, 15, 8, 20, 3, 6, 7, 7, 17, 19, 23, 43, 8, 19, 35, 22, 17, 19, 9,
       10, 19, 14, 16, 26, 9, 5, 7, 17, 18, 12, 25, 63, 8, 19, 35, 22, 17, 15, 16
     ];
-    var data5 = [3];
+    const data5 = [3];
 
     assert.equal(percentile.calc(data1, 30), 20);
     assert.equal(percentile.calc(data1, 40), 20);
