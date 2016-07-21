@@ -1,5 +1,5 @@
 import assert from 'assert';
-import percentile from './dist/index.js';
+import percentile from './dist/';
 
 describe('Percentile calculation', () => {
   it('should return expected values', () => {

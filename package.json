@@ -2,7 +2,7 @@
   "name": "stats-percentile",
   "version": "1.2.0",
   "description": "Calculate Nth percentile of a list of values",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
     "benchmark": "node benchmark/index.js",
