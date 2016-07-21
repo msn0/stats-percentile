@@ -1,20 +1,18 @@
 "use strict";
 
 function swap(data, i, j) {
-  var tmp;
   if (i === j) {
     return;
   }
-  tmp = data[j];
+  const tmp = data[j];
   data[j] = data[i];
   data[i] = tmp;
 }
 
 function partition(data, start, end) {
-  var pivot = data[start];
-  var i, j;
+  let i, j;
   for (i = start + 1, j = start; i < end; i++) {
-    if (data[i] < pivot) {
+    if (data[i] < data[start]) {
       swap(data, i, ++j);
     }
   }
@@ -23,9 +21,8 @@ function partition(data, start, end) {
 }
 
 function findK(data, start, end, k) {
-  var pos;
   while (start < end) {
-    pos = partition(data, start, end);
+    let pos = partition(data, start, end);
     if (pos === k) {
       return data[k];
     }
@@ -37,7 +34,7 @@ function findK(data, start, end, k) {
   }
 }
 
-module.exports = {
+export default {
   // Calculate n-th percentile of 'data' using Nearest Rank Method
   // http://en.wikipedia.org/wiki/Percentile#The_Nearest_Rank_method
   calc: function (data, n) {

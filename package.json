@@ -4,8 +4,9 @@
   "description": "Calculate Nth percentile of a list of values",
   "main": "index.js",
   "scripts": {
-    "test": "mocha test.js",
-    "benchmark": "node benchmark/index.js"
+    "test": "mocha --compilers js:babel-register",
+    "benchmark": "node benchmark/index.js",
+    "prepublish": "webpack"
   },
   "repository": {
     "type": "git",
@@ -24,7 +25,11 @@
   },
   "homepage": "https://github.com/msn0/stats-percentile",
   "devDependencies": {
-    "mocha": "^2.4.5",
-    "benchmark": "^2.1.0"
+    "babel-cli": "^6.11.4",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.9.0",
+    "benchmark": "^2.1.1",
+    "mocha": "^2.5.3",
+    "webpack": "^1.13.1"
   }
 }
