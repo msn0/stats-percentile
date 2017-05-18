@@ -1,5 +1,3 @@
-"use strict";
-
 function swap(data, i, j) {
   if (i === j) {
     return;
@@ -34,10 +32,8 @@ function findK(data, start, end, k) {
   }
 }
 
-export default {
-  // Calculate n-th percentile of 'data' using Nearest Rank Method
-  // http://en.wikipedia.org/wiki/Percentile#The_Nearest_Rank_method
-  calc: function (data, n) {
+// Calculate n-th percentile of 'data' using Nearest Rank Method
+// http://en.wikipedia.org/wiki/Percentile#The_Nearest_Rank_method
+export default function (data, n) {
     return findK(data.concat(), 0, data.length, Math.ceil(data.length * n / 100) - 1);
-  }
 };

@@ -1,6 +1,6 @@
 # Percentile [![Build Status](https://travis-ci.org/msn0/stats-percentile.svg?branch=master)](http://travis-ci.org/msn0/stats-percentile)
 
-> Calculate n-th percentile of data using [Nearest Rank Method](http://en.wikipedia.org/wiki/Percentile#The_Nearest_Rank_method).
+> Calculate n-th percentile
 
 ## Installation
 
@@ -8,41 +8,36 @@
 npm install stats-percentile
 ```
 
-## Usage
+## Example 1
 
 ```js
 import percentile from 'stats-percentile';
 
 const data = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
 
-percentile.calc(data, 75); // → 15
+// calculate p75
+percentile(data, 75); // → 15
 ```
 
-### API
+## Example 2
 
-#### calc(data, n)
+```js
+const percentile = require('stats-percentile');
 
-##### data
+function p95() {
+    return data => percentile(data, 95);
+}
 
-Type: `array`
-
-The data to be analysed; an array of numbers.
-
-##### n
-
-Type: `number`
-
-n-th percentile to calculate; a number between 0 and 100.
-
-## Alogrithm
-
-Internally, `calc` applies a O(n) algorithm for k'th largest element problem, which get a better performance than ordinary sort method. The following benchmark result can tell more:
-
+p95([
+  10, 13, 15, 16, 20, 3, 6, 7, 7, 15, 19, 13,
+  13, 8, 19, 35, 22, 17, 19, 19, 12, 21, 9, 9, 12
+]); // → 22
 ```
-percentile#findK x 89,136 ops/sec ±1.25% (83 runs sampled)
-percentile#sort x 23,889 ops/sec ±1.85% (79 runs sampled)
-Fastest is ["percentile#findK"]
-```
+
+## More info
+
+See [Nearest Rank Method](http://en.wikipedia.org/wiki/Percentile#The_Nearest_Rank_method)
 
 ## License
+
 MIT &copy; [Michał Jezierski](https://pl.linkedin.com/in/jezierskimichal)
