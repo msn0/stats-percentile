@@ -16,6 +16,10 @@ describe('Percentile calculation', () => {
       10, 19, 14, 16, 26, 9, 5, 7, 17, 18, 12, 25, 63, 8, 19, 35, 22, 17, 15, 16
     ];
     const data5 = [3];
+    const data6 = [
+      10, 13, 15, 16, 20, 3, 6, 7, 7, 15, 19, 13,
+      13, 8, 19, 35, 22, 17, 19, 19, 12, 21, 9, 9, 12
+    ];
 
     assert.equal(percentile.calc(data1, 30), 20);
     assert.equal(percentile.calc(data1, 40), 20);
@@ -43,5 +47,7 @@ describe('Percentile calculation', () => {
     assert.equal(percentile.calc(data5, 50), 3);
     assert.equal(percentile.calc(data5, 75), 3);
     assert.equal(percentile.calc(data5, 100), 3);
+
+    assert.equal(percentile.calc(data6, 95), 22);
   });
 });
