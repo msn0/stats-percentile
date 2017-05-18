@@ -21,33 +21,33 @@ describe('Percentile calculation', () => {
       13, 8, 19, 35, 22, 17, 19, 19, 12, 21, 9, 9, 12
     ];
 
-    assert.equal(percentile.calc(data1, 30), 20);
-    assert.equal(percentile.calc(data1, 40), 20);
-    assert.equal(percentile.calc(data1, 50), 35);
-    assert.equal(percentile.calc(data1, 100), 50);
+    assert.equal(percentile(data1, 30), 20);
+    assert.equal(percentile(data1, 40), 20);
+    assert.equal(percentile(data1, 50), 35);
+    assert.equal(percentile(data1, 100), 50);
 
-    assert.equal(percentile.calc(data2, 25), 7);
-    assert.equal(percentile.calc(data2, 50), 8);
-    assert.equal(percentile.calc(data2, 75), 15);
-    assert.equal(percentile.calc(data2, 100), 20);
+    assert.equal(percentile(data2, 25), 7);
+    assert.equal(percentile(data2, 50), 8);
+    assert.equal(percentile(data2, 75), 15);
+    assert.equal(percentile(data2, 100), 20);
 
-    assert.equal(percentile.calc(data3, 25), 7);
-    assert.equal(percentile.calc(data3, 50), 9);
-    assert.equal(percentile.calc(data3, 75), 15);
-    assert.equal(percentile.calc(data3, 100), 20);
+    assert.equal(percentile(data3, 25), 7);
+    assert.equal(percentile(data3, 50), 9);
+    assert.equal(percentile(data3, 75), 15);
+    assert.equal(percentile(data3, 100), 20);
 
-    assert.equal(percentile.calc(data4, 10), 6);
-    assert.equal(percentile.calc(data4, 30), 11);
-    assert.equal(percentile.calc(data4, 40), 14);
-    assert.equal(percentile.calc(data4, 95), 35);
-    assert.equal(percentile.calc(data4, 99), 47);
-    assert.equal(percentile.calc(data4, 100), 63);
+    assert.equal(percentile(data4, 10), 6);
+    assert.equal(percentile(data4, 30), 11);
+    assert.equal(percentile(data4, 40), 14);
+    assert.equal(percentile(data4, 95), 35);
+    assert.equal(percentile(data4, 99), 47);
+    assert.equal(percentile(data4, 100), 63);
 
-    assert.equal(percentile.calc(data5, 25), 3);
-    assert.equal(percentile.calc(data5, 50), 3);
-    assert.equal(percentile.calc(data5, 75), 3);
-    assert.equal(percentile.calc(data5, 100), 3);
+    assert.equal(percentile(data5, 25), 3);
+    assert.equal(percentile(data5, 50), 3);
+    assert.equal(percentile(data5, 75), 3);
+    assert.equal(percentile(data5, 100), 3);
 
-    assert.equal(percentile.calc(data6, 95), 22);
+    assert.equal(percentile(data6, 95), 22);
   });
 });
