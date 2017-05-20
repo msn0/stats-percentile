@@ -1,7 +1,7 @@
 {
   "name": "stats-percentile",
   "version": "2.0.0",
-  "description": "Calculate Nth percentile of a list of values",
+  "description": "Calculate n-th percentile",
   "main": "dist/index.js",
   "scripts": {
     "test": "ava --verbose && eslint .",
