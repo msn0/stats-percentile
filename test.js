@@ -1,5 +1,5 @@
 import test from 'ava';
-import percentile from './dist/';
+import percentile from './';
 
 test('should return expected values', t => {
 
