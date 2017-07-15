@@ -1,11 +1,14 @@
 {
   "name": "stats-percentile",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Calculate n-th percentile",
-  "main": "dist/index.js",
+  "main": "index.js",
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "scripts": {
     "test": "ava --verbose && eslint .",
-    "prepublish": "rollup -c"
+    "prepare": "rollup -c"
   },
   "repository": {
     "type": "git",
