@@ -20,7 +20,7 @@ function partition(data, start, end) {
 
 function findK(data, start, end, k) {
     while (start < end) {
-        let pos = partition(data, start, end);
+        const pos = partition(data, start, end);
         if (pos === k) {
             return data[k];
         }

@@ -7,7 +7,7 @@
     "node": ">=8.0.0"
   },
   "scripts": {
-    "test": "ava --verbose && eslint ."
+    "test": "ava --verbose && eslint --fix ."
   },
   "repository": {
     "type": "git",
@@ -27,6 +27,7 @@
   "homepage": "https://github.com/msn0/stats-percentile",
   "devDependencies": {
     "ava": "^0.22.0",
-    "eslint-config-helmut": "^1.2.0"
+    "eslint-config-helmut": "^2.1.0",
+    "eslint-plugin-react": "^7.4.0"
   }
 }
