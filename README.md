@@ -1,3 +1,5 @@
+❗This repository has been moved to [@elstats/percentile](https://github.com/elstats/percentile).
+
 # Percentile [![Build Status](https://travis-ci.org/msn0/stats-percentile.svg?branch=master)](http://travis-ci.org/msn0/stats-percentile)
 
 > Calculate n-th percentile
