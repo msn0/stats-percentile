@@ -1,5 +1,5 @@
-const test = require('ava');
-const percentile = require('./');
+import test from 'ava';
+import percentile from './index';
 
 test('should return expected values', t => {
 

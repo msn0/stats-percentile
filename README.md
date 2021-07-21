@@ -1,5 +1,3 @@
-❗This repository has been moved to [@elstats/percentile](https://github.com/elstats/percentile).
-
 # Percentile [![Build Status](https://travis-ci.org/msn0/stats-percentile.svg?branch=master)](http://travis-ci.org/msn0/stats-percentile)
 
 > Calculate n-th percentile
@@ -15,10 +13,11 @@ npm install stats-percentile
 ```js
 import percentile from 'stats-percentile';
 
-const data = [3, 6, 7, 8, 8, 10, 13, 15, 16, 20];
-
 // calculate p75
-percentile(data, 75); // → 15
+percentile(
+    [3, 6, 7, 8, 8, 10, 13, 15, 16, 20],
+    75
+); // → 15
 ```
 
 ## Example 2
